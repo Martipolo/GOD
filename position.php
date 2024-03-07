@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $trajet_id = $_POST['trajet_id'];
 
     // Connexion à la base de données
-        $hostname = '10.170.10.66:3306';
+        $hostname = '10.5.40.46:3306';
         $database = 'localisationdrone';
         $username = 'polo';
         $password = 'polo';
