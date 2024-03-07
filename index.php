@@ -33,8 +33,7 @@ $asciiArt = "  ________                                _____  ________
         \/     \/      \/     \/                         \/                  \/     \/     \/ ";
 		
 echo "<pre>$asciiArt</pre>";
-// Utilisation de balises div pour centrer le contenu
-echo "<div style='text-align: center; margin: auto;'>";
+
 
     echo "<h1>Position des Drones et trajectoires</h1>";
     echo "<table border='1'>";
@@ -72,7 +71,7 @@ echo "<div style='text-align: center; margin: auto;'>";
         echo "</tr>";
     }
     echo "</table>";
-    echo "</div>";
+    
 
 
 } catch (PDOException $e) {
