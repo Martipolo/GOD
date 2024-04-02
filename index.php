@@ -89,7 +89,7 @@ echo "<pre>$asciiArt</pre>";
     echo "Accès non autorisé";
 
     ?>
-    <a href="login.php">Veuillez vous logger ici!</a>
+    <a href="login.html">Veuillez vous logger ici!</a>
     <?php
 }
 
