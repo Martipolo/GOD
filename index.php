@@ -29,6 +29,12 @@ try {
     $stmt3 = $pdo->query($query3);
     // Afficher les résultats
 
+?>
+<form action="logout.php" method="post">
+    <button type="submit">Se déconnecter</button>
+</form>
+<?php
+
 $asciiArt = "  ________                                _____  ________                                     
  /  _____/_____    _____   ____     _____/ ____\ \______ \_______  ____   ____   ____   ______
 /   \  ___\__  \  /     \_/ __ \   /  _ \   __\   |    |  \_  __ \/  _ \ /    \_/ __ \ /  ___/
