@@ -11,7 +11,6 @@
                 <?php
         }else{
             http_response_code(401);
-        }
         ?>
         <!DOCTYPE html>
 <html lang="fr">
@@ -25,3 +24,10 @@
     <p>Désolé, vous n'êtes pas autorisé à accéder à cette page.</p>
 </body>
 </html>
+        <?php
+        
+        
+        
+        }
+        
+        
