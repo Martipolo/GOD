@@ -10,5 +10,5 @@
                 <br><br><a href="index.php">Accéder à GOD!!</a>
                 <?php
         }else{
-                echo "Echec";
+            http_response_code(401);
         }
