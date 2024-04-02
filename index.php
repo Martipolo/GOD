@@ -1,6 +1,10 @@
 
 <?php
 
+    session_start();
+
+if ($_SESSION['login']=="Peter"){
+
 // Informations de connexion à la base de données distante
 $hostname = '10.5.40.46:3306';
 $database = 'localisationdrone';
@@ -79,6 +83,14 @@ echo "<pre>$asciiArt</pre>";
     echo "Erreur : " . $e->getMessage();
 
 
+}
+}else{
+
+    echo "Accès non autorisé";
+
+    ?>
+    <a href="login.php">Veuillez vous logger ici!</a>
+    <?php
 }
 
 
