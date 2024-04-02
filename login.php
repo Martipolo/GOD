@@ -7,7 +7,7 @@
                 $_SESSION['login']=$login;
                 echo "Bienvenue " . $login;
                 ?>
-                <a href="index.php">Accéder à GOD!!</a>
+                <br><br><a href="index.php">Accéder à GOD!!</a>
                 <?php
         }else{
                 echo "Echec";
