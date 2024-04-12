@@ -3,7 +3,8 @@
 
     session_start();
 
-if ($_SESSION['login']=="Peter"){
+#if ($_SESSION['login']=="Peter"){
+if (isset($_SESSION['login'])){
 
 // Informations de connexion à la base de données distante
 $hostname = '10.5.40.46:3306';
