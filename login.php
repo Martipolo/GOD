@@ -19,8 +19,12 @@ if ($connexion->connect_error) {
         $pwd = $_POST['password'];
 
 // Requête SQL pour vérifier l'existence de l'utilisateur
-$sql = "SELECT * FROM authentification WHERE nom = '$login' AND mot_de_passe = '$pwd'";
-$resultat = $connexion->query($sql);
+$sql = "SELECT * FROM authentification WHERE nom = :login AND mot_de_passe = :pwd";
+$req = $pdo->prepare($sql);
+$req->bindParam('login', $login);
+$req->bindParam('pwd', $pwd);
+$req->execute();
+$resultat = $req->fetchAll()
 var_dump ($resultat);
 
 if ($resultat->num_rows > 0) {
