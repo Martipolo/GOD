@@ -1,12 +1,12 @@
 <?php
 
 // Connexion à la base de données
-$serveur = "10.5.40.46:3306";
-$utilisateur = "polo";
-$motdepasse = "polo";
-$basededonnees = "localisationdrone";
+$serveur = '10.5.40.46:3306';
+$utilisateur = 'polo';
+$motdepasse = 'polo';
+$basededonnees = 'localisationdrone';
 
-$connexion = new PDO("mysql:host=$serveur;dbname=$basededonnees", $utilisateur, $motdepasse, );
+$connexion = new PDO("mysql:host=$serveur;dbname=$basededonnees", $utilisateur, $motdepasse);
 
 // Vérifier la connexion
 if ($connexion->connect_error) {
