@@ -24,7 +24,7 @@ $req = $pdo->prepare($sql);
 $req->bindParam('login', $login);
 $req->bindParam('pwd', $pwd);
 $req->execute();
-$resultat = $req->fetchAll()
+$resultat = $req->fetchAll();
 var_dump ($resultat);
 
 if ($resultat->num_rows > 0) {
