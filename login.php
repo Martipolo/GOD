@@ -25,9 +25,9 @@ $req->bindParam('login', $login);
 $req->bindParam('pwd', $pwd);
 $req->execute();
 $resultat = $req->fetchAll();
-var_dump ($resultat);
 
-if ($resultat->num_rows > 0) {
+
+if (!empty($resultat)) {
     // L'utilisateur est authentifié
     echo "Authentification réussie ! Bienvenue, $login.";
                 ?>
