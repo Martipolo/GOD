@@ -30,6 +30,7 @@ $resultat = $req->fetchAll();
 if (!empty($resultat)) {
     // L'utilisateur est authentifié
     echo "Authentification réussie ! Bienvenue, $login.";
+    $_SESSION['login']=$login;
                 ?>
                 <br><br><a href="index.php">Accéder à GOD!!</a>
                 <?php
