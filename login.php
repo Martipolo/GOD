@@ -19,7 +19,7 @@ if ($connexion->connect_error) {
         $pwd = $_POST['password'];
 
 // Requête SQL pour vérifier l'existence de l'utilisateur
-$sql = "SELECT * FROM authentification WHERE nom = '$login' AND mot_de_passe = '$password'";
+$sql = "SELECT * FROM authentification WHERE nom = '$login' AND mot_de_passe = '$pwd'";
 $resultat = $connexion->query($sql);
 
 
